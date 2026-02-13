@@ -7,21 +7,23 @@
 template <typename T>
 class Array
 {
-public:
-    Array();
-    explicit Array(unsigned int n);
-    Array(Array const& other);
-    Array& operator=(Array const& other);
-    ~Array();
-
-    T& operator[](unsigned int index);
-    T const& operator[](unsigned int index) const;
-
-    unsigned int size() const;
 
 private:
-    T* _data;
-    unsigned int _size;
+	T* _data;
+	unsigned int _size;
+
+public:
+	Array();
+	explicit Array(unsigned int n);
+	Array(Array const& other);
+	Array& operator=(Array const& other);
+	~Array();
+
+	T& operator[](unsigned int index);
+	T const& operator[](unsigned int index) const;
+
+	unsigned int size() const;
+
 };
 
 #include "Array.tpp"
