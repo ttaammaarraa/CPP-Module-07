@@ -1,8 +1,8 @@
-NAME := Array
-CXX := c++
-CXXFLAGS := -Wall -Wextra -Werror -std=c++98
-SRC := main.cpp
-INC := Array.hpp Array.tpp
+NAME = Array
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+SRC = main.cpp
+INC = Array.hpp Array.tpp
 
 all: $(NAME)
 
